@@ -16,10 +16,6 @@ bool checkText(string text);
 
 
 // private functions
-int hexToCode(char ch);
-char codeToHex(int cd);
-long long generatePrimeLong();
-bool isPrime(long long number);
 long long calculateN(long long p, long long q);
 long long calculatePhi(long long p, long long q);
 long long gcd(long long a, long long b);
@@ -27,15 +23,6 @@ bool checkE(long long phi);
 long long calculateE(long long phi);
 long long calculateD(long long phi, long long e);
 vector<long long> stringToVector(string text);
-
-bool isPrime(long long number)
-{
-    for(int i = 2; i <= sqrt(number); i++)
-    {
-        if(number % i == 0) return false;
-    }
-    return true;
-}
 
 long long calculateN(long long p, long long q)
 {
